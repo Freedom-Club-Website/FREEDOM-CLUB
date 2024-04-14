@@ -1,0 +1,300 @@
+
+
+/* colour palette:
+
+Beige: rgb(229, 217, 182)
+Green: rgb(164, 190, 123)
+Nature (Green 2): rgb(95, 141, 78)
+Earth (Green 3): rgb(40, 84, 48)
+
+*/
+
+
+
+
+/* unvisited link */
+a:link {
+    color: rgb(95, 141, 78);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid rgb(95, 141, 78);
+    border-radius: 5px;
+}
+
+/* visited link */
+a:visited {
+    color: rgb(95, 141, 78);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid rgb(95, 141, 78);
+    border-radius: 5px;
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(95, 141, 78);
+    border-radius: 3px 3px 0px 3px;
+    text-decoration: none;
+}
+
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(229, 217, 182);
+    
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    background-color: #f0f0f0;
+    border: 1px solid rgb(95, 141, 78);
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(229, 217, 182);
+    
+}
+
+/* Navigation styles */
+nav {
+    width: 100%;
+    border: 1px solid rgb(79, 111, 82);
+    text-align: center;
+    background-color: rgb(229, 217, 182);
+    padding: 10px 0; /* Add padding */
+}
+
+
+nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block; /* Show dropdown content on parent li hover */
+    
+}
+
+/* Aside styles */
+aside {
+    width: 25%;
+    height: 100%;
+    background-color: #e0e0e0;
+    border: 1px solid rgb(95, 141, 78);
+    box-sizing: border-box;
+    float: right;
+    background-color: rgb(229, 217, 182);
+    padding: 10px; /* Add padding */
+}
+
+/* Section styles */
+section {
+    width: 75%;
+    height: 100%;
+    background-color: #f8f8f8;
+    border: 1px solid rgb(95, 141, 78);
+    box-sizing: border-box;
+    float: left;
+    background-color: rgb(229, 217, 182);
+    padding: 10px; /* Add padding */
+}
+
+/* Article styles */
+article {
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    border: 1px solid rgb(95, 141, 78);
+    box-sizing: border-box;
+    float: left;
+    background-color: rgb(229, 217, 182);
+    
+}
+
+/* Footer styles */
+footer {
+    width: 100%;
+    background-color: #f0f0f0;
+    border: 1px solid rgb(40, 84, 48);
+    box-sizing: border-box;
+    clear: both;
+    background-color: rgb(229, 217, 182);
+    text-align: center;
+    padding: 10px 0; /* Add padding */
+}
+
+
+/* css styling for h1 element*/
+h1 {
+    margin: 0;
+    padding: 4px;
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    margin: 0;
+    padding: 4px;
+    color: rgb(0, 0, 0);
+}
+
+h3 {
+    margin: 0;
+    padding: 4px;
+    color: rgb(0, 0, 0);
+}
+
+h4{
+    margin: 0;
+    padding: 4px;
+    color: rgb(79, 111, 82);
+
+}
+
+h5{
+    margin: 0;
+    padding: 4px;
+    color: rgb(79, 111, 82);
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Style the dropdown button */
+
+.dropbtn {
+    color: rgb(95, 141, 78);
+    padding: 0px 16px; /* Padding for dropdown button */
+    text-decoration: none;
+}
+
+/* Dropdown container */
+.dropdown-content {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(229, 217, 182);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(79, 111, 82);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: rgb(95, 141, 78);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+    background-color: rgb(229, 217, 182);
+    overflow: hidden;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    
+    display: inline-block;
+    color: rgb(79, 111, 82);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    background-color:rgb(95, 141, 78);
+    color: black;
+  }
+
+  .custom-bullet {
+    list-style-type: none; /* Remove default bullet points */
+}
+
+.custom-bullet li {
+    position: relative; /* Position relative to create a space for custom bullet */
+    padding-left: 20px; /* Add space for custom bullet */
+}
+
+.custom-bullet li::before {
+    content: "\2022"; 
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    color: rgb(95, 141, 78); /* Custom bullet color */
+    font-size: 1.2em; /* Custom bullet size */
+    font-weight: bold; /* Custom bullet weight */
+    margin-right: 5px; /* Spacing between bullet and text */
+}
+
+/* Popup styles */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); /* Black with opacity */
+}
+
+.popup-content {
+    background-color: rgb(229, 217, 182);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    color: rgb(95, 141, 78);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+table, th, td {
+    border:1px solid;
+}
+
+iframe {
+    border:3px;
+}
